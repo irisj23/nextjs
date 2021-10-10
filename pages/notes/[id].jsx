@@ -3,14 +3,13 @@ import { useRouter } from 'next/router';
 
 const Page = () => {
 	const router = useRouter();
-	// /notes/1/2/3/4
-	// params = [1, 2, 3, 4]
-	const { params } = router.query
-	console.log(params);
+
+	const { id } = router.query
+	console.log(id);
 
 	return (
 		<h1>
-			Notes
+			Notes# { id }
 		</h1>
 	)
 }
