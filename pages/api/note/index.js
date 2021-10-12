@@ -13,7 +13,7 @@ const handler = nc()
 		res.json({data: note})
 	})
 	.get((req, res) => {
-		res.json({data: note})
+		res.json({data: notes})
 	})
 
 export default handler;
