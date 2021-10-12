@@ -5,8 +5,13 @@ const getNote = id => {
 	return notes.find((n) =>  n.id === parseInt(id))
 }
 
+// const checkAuth = (req, res, next) => {
+// 	if (req.headers.auth)
+// }
+
 
 const handler = nc()
+	//.use(checkAuth())
 	.get((req, res) => {
 
 		const note = getNote(req.query.id);
